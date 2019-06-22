@@ -17,7 +17,7 @@ for image_label in label:
         img = cv.imread("dataset_image/"+image_label+"/"+image,0)
         img = cv.resize(img, (244,244))
         x = np.array(img, dtype="uint8")
-        x = x.reshape((244, 244, 1))
+        x = x.reshape((1, 244, 244))
         dataset.append((x, image_label))
 
 
