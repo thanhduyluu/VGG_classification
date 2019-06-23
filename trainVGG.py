@@ -15,7 +15,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 
 import keras
-K.set_image_dim_ordering('tf')
+K.set_image_dim_ordering('th')
 # fix random seed for reproducibility
 seed = 7
 numpy.random.seed(seed)
