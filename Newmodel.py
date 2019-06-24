@@ -63,7 +63,7 @@ model.add(Dense(4096, activation='relu', kernel_constraint=maxnorm(3)))
 model.add(Dense(4096, activation='relu', kernel_constraint=maxnorm(3)))
 model.add(Dense(num_classes, activation='softmax'))
 # Compile model
-epochs = 5
+epochs = 50
 lrate = 0.1
 decay = 1e-6
 sgd = SGD(lr=lrate, momentum=0.9, decay=decay, nesterov=False)
