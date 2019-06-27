@@ -10,8 +10,8 @@ path = root + '/dataset_image/'
 file = os.listdir(path)
 
 def extract_file(fname, to_directory):
-    if (fname.endswith("tar.xz")):
-        tar = tarfile.open(fname, "r:xz")
+    if (fname.endswith("tar.gz")):
+        tar = tarfile.open(fname, "r:gz")
         tar.extractall(to_directory)	
         tar.close()
     elif (fname.endswith("tar")):
